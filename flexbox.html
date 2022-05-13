@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Pseudo selectors & more designing</title>
+      <style>
+           .container{
+            height: 544px; 
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction:column;
+            /*flex-wrap: wrap;
+            justify-content:space-evenly
+            align-items:flex-end;*/
+           }
+           .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+       /* #item-7{
+           flex-shrink: 3;
+        }
+        #item-1{
+           order:0;
+        
+        }*/
+        #item-3{
+           /* flex-basis: 160px;*/
+           align-self: flex-starts;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fivth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+        <div class="item" id="item-7">seventh Box</div>
+    </div>
+  </body>
+  </html>
